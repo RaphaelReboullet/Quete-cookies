@@ -1,4 +1,6 @@
-<?php require 'inc/head.php';
+<?php
+
+require 'inc/head.php';
 if (!isset($_SESSION['loginname'])){
     header ('location: login.php');
 }

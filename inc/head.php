@@ -1,9 +1,10 @@
 <?php
 session_start();
 
-If ($_GET['deconnect'] = 'deco')
+If (isset ($_GET['deconnect']))
 {
     session_destroy();
+    header ('location: login.php');
 }
 
 ?>
